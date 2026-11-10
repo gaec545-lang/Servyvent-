@@ -1,0 +1,126 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contacto — Papelería Servyvent | San Salvador El Seco, Puebla</title>
+<meta name="description" content="Contáctanos: Papelería Servyvent en San Salvador El Seco, Puebla. WhatsApp Business, Facebook e Instagram. Dos sucursales, horarios y ubicación.">
+<link rel="stylesheet" href="assets/css/fonts.css">
+<link rel="stylesheet" href="assets/css/tailwind.build.css">
+
+<link rel="stylesheet" href="assets/css/site.css">
+<link rel="icon" type="image/png" href="assets/img/logo-64.png">
+</head>
+<body data-page="contacto" class="bg-paper text-ink font-body antialiased">
+<div id="site-header"></div>
+
+<main class="pt-[72px]">
+
+  <section class="bg-surface border-b border-primary/10">
+    <div class="max-w-wrap mx-auto px-6 py-16 md:py-20">
+      <nav class="text-sm text-ink/60" aria-label="Migas de pan">
+        <a href="index.html" class="u-link hover:text-accent">Inicio</a> <span aria-hidden="true">/</span> <span class="text-ink font-medium" aria-current="page">Contacto</span>
+      </nav>
+      <h1 data-enter class="mt-4 font-display font-bold text-primary text-4xl md:text-6xl">Contacto</h1>
+      <p data-enter="2" class="mt-4 font-display font-medium text-accent text-xl md:text-2xl">¡Estamos para atenderte!</p>
+      <p data-enter="3" class="mt-3 text-lg text-ink/70 max-w-2xl">Si necesitas información sobre nuestros productos, servicios, precios, promociones o disponibilidad, ponte en contacto con nosotros.</p>
+    </div>
+  </section>
+
+  <section class="py-16">
+    <div class="max-w-wrap mx-auto px-6 grid lg:grid-cols-2 gap-10">
+
+      <!-- Formulario -->
+      <div>
+        <h2 class="font-display font-bold text-primary text-3xl">Escríbenos</h2>
+        <p class="mt-3 text-ink/70">Completa el formulario y te responderemos a la brevedad (también puedes enviar el mensaje directo por WhatsApp).</p>
+        <form id="contact-form" class="mt-8 space-y-4 bg-surface rounded-2xl p-6 md:p-8 shadow-card" novalidate>
+          <div>
+            <label for="c-nombre" class="block text-sm font-display font-semibold text-primary mb-1">Nombre completo *</label>
+            <input id="c-nombre" name="nombre" type="text" required autocomplete="name" class="w-full rounded-lg border border-ink/15 bg-paper px-4 py-3 focus:border-accent outline-none" placeholder="Ej. Juan Pérez">
+          </div>
+          <div class="grid sm:grid-cols-2 gap-4">
+            <div>
+              <label for="c-correo" class="block text-sm font-display font-semibold text-primary mb-1">Correo electrónico</label>
+              <input id="c-correo" name="correo" type="email" autocomplete="email" class="w-full rounded-lg border border-ink/15 bg-paper px-4 py-3 focus:border-accent outline-none" placeholder="tucorreo@ejemplo.com">
+            </div>
+            <div>
+              <label for="c-tel" class="block text-sm font-display font-semibold text-primary mb-1">Teléfono</label>
+              <input id="c-tel" name="telefono" type="tel" autocomplete="tel" class="w-full rounded-lg border border-ink/15 bg-paper px-4 py-3 focus:border-accent outline-none" placeholder="Ej. 222 123 4567">
+            </div>
+          </div>
+          <div>
+            <label for="c-msg" class="block text-sm font-display font-semibold text-primary mb-1">Mensaje *</label>
+            <textarea id="c-msg" name="mensaje" rows="5" required class="w-full rounded-lg border border-ink/15 bg-paper px-4 py-3 focus:border-accent outline-none" placeholder="¿En qué podemos ayudarte?"></textarea>
+          </div>
+          <button type="submit" class="press w-full bg-accent hover:bg-primary text-white font-display font-semibold text-base px-6 py-3.5 rounded-lg shadow-card">Enviar mensaje</button>
+        </form>
+        <div id="contact-ok" class="hidden mt-4 rounded-xl border-2 border-accent bg-accent/10 p-5">
+          <p class="font-display font-semibold text-primary">¡Mensaje preparado!</p>
+          <p class="mt-1 text-sm text-ink/70">Envíalo por WhatsApp para una respuesta más rápida:</p>
+          <a id="contact-wa" href="contacto.html" target="_blank" rel="noopener" class="press mt-3 inline-flex items-center gap-2 bg-accent hover:bg-primary text-white font-display font-semibold px-6 py-3 rounded-lg">Abrir WhatsApp</a>
+        </div>
+      </div>
+
+      <!-- Datos de contacto -->
+      <div class="bg-primary text-white rounded-2xl p-8 md:p-10 shadow-card">
+        <h2 class="font-display font-bold text-3xl">Papelería Servyvent</h2>
+        <p class="mt-2 text-highlight font-display font-medium">Todo lo que necesitas, en un solo lugar.</p>
+        <ul class="mt-8 space-y-5 text-white/85">
+          <li class="flex gap-3">
+            <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="#E8A23A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="shrink-0 mt-0.5"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 1 1 16 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            <span><strong class="text-white font-display">Ubicación:</strong> San Salvador El Seco, Puebla, México. Contamos con dos sucursales.</span>
+          </li>
+          <li class="flex gap-3">
+            <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="#E8A23A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="shrink-0 mt-0.5"><path d="M21 11.5a8.4 8.4 0 0 1-9 8.4 8.6 8.6 0 0 1-3.8-.9L3 21l2-5.2a8.4 8.4 0 1 1 16-4.3z"/></svg>
+            <span><strong class="text-white font-display">WhatsApp Business:</strong> atención a clientes y recepción de pedidos. <a href="pedidos.html" class="u-link text-highlight">Haz tu pedido aquí</a></span>
+          </li>
+          <li class="flex gap-3">
+            <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="#E8A23A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="shrink-0 mt-0.5"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+            <span><strong class="text-white font-display">Facebook:</strong> publicaciones, promociones y novedades. <span class="text-xs bg-white/15 px-2 py-0.5 rounded-full ml-1">Próximamente</span></span>
+          </li>
+          <li class="flex gap-3">
+            <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="#E8A23A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="shrink-0 mt-0.5"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1"/></svg>
+            <span><strong class="text-white font-display">Instagram:</strong> fotografías de productos, novedades y contenido comercial. <span class="text-xs bg-white/15 px-2 py-0.5 rounded-full ml-1">Próximamente</span></span>
+          </li>
+          <li class="flex gap-3">
+            <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="#E8A23A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="shrink-0 mt-0.5"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+            <span><strong class="text-white font-display">Horario de atención:</strong> consultar directamente con nuestras sucursales.</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Mapa -->
+  <section class="pb-16">
+    <div class="max-w-wrap mx-auto px-6">
+      <h2 class="font-display font-bold text-primary text-3xl">¿Dónde estamos?</h2>
+      <div class="mt-8 rounded-2xl overflow-hidden shadow-card border border-primary/10">
+        <iframe title="Mapa de San Salvador El Seco, Puebla" src="https://www.google.com/maps?q=San+Salvador+El+Seco,+Puebla,+Mexico&z=13&output=embed" class="w-full h-[380px]" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+      <div class="mt-8 grid gap-6 md:grid-cols-2">
+        <div class="lift bg-surface rounded-2xl p-7 shadow-card">
+          <h3 class="font-display font-semibold text-primary text-xl">Sucursal Matriz</h3>
+          <p class="mt-2 text-ink/70">Comunidad de San Salvador El Seco, Puebla, México.</p>
+          <p class="mt-1 text-sm text-ink/60">Horario: consultar directamente en tienda.</p>
+          <a class="u-link mt-4 inline-block font-display font-semibold text-accent" href="https://www.google.com/maps/search/?api=1&query=San+Salvador+El+Seco,+Puebla,+Mexico" target="_blank" rel="noopener">Cómo llegar en Google Maps</a>
+        </div>
+        <div class="lift bg-surface rounded-2xl p-7 shadow-card">
+          <h3 class="font-display font-semibold text-primary text-xl">Sucursal 2 <span class="text-xs font-medium text-highlight bg-highlight/10 px-2 py-0.5 rounded-full align-middle">desde 2018</span></h3>
+          <p class="mt-2 text-ink/70">Comunidad de San Salvador El Seco, Puebla, México.</p>
+          <p class="mt-1 text-sm text-ink/60">Horario: consultar directamente en tienda.</p>
+          <a class="u-link mt-4 inline-block font-display font-semibold text-accent" href="https://www.google.com/maps/search/?api=1&query=San+Salvador+El+Seco,+Puebla,+Mexico" target="_blank" rel="noopener">Cómo llegar en Google Maps</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+<div id="site-footer"></div>
+<script src="assets/js/layout.js"></script>
+<script src="assets/js/main.js"></script>
+</body>
+</html>
+
+

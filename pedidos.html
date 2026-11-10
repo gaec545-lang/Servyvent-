@@ -1,0 +1,135 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pedidos — Papelería Servyvent</title>
+<meta name="description" content="Realiza tu pedido en Papelería Servyvent fácil y práctico: consulta el catálogo, escríbenos por WhatsApp, confirma tu compra y recoge en sucursal. Métodos de pago: efectivo y transferencia.">
+<link rel="stylesheet" href="assets/css/fonts.css">
+<link rel="stylesheet" href="assets/css/tailwind.build.css">
+
+<link rel="stylesheet" href="assets/css/site.css">
+<link rel="icon" type="image/png" href="assets/img/logo-64.png">
+</head>
+<body data-page="pedidos" class="bg-paper text-ink font-body antialiased">
+<div id="site-header"></div>
+
+<main class="pt-[72px]">
+
+  <section class="bg-surface border-b border-primary/10">
+    <div class="max-w-wrap mx-auto px-6 py-16 md:py-20">
+      <nav class="text-sm text-ink/60" aria-label="Migas de pan">
+        <a href="index.html" class="u-link hover:text-accent">Inicio</a> <span aria-hidden="true">/</span> <span class="text-ink font-medium" aria-current="page">Pedidos</span>
+      </nav>
+      <h1 data-enter class="mt-4 font-display font-bold text-primary text-4xl md:text-6xl">Pedidos</h1>
+      <p data-enter="2" class="mt-4 text-lg text-ink/70 max-w-2xl">¡Realiza tus pedidos de una manera fácil y práctica! Facilitamos tus compras mediante la atención directa por WhatsApp.</p>
+    </div>
+  </section>
+
+  <!-- Pasos -->
+  <section class="py-16">
+    <div class="max-w-wrap mx-auto px-6">
+      <h2 class="font-display font-bold text-primary text-3xl md:text-4xl">¿Cómo realizar tu pedido?</h2>
+      <ol class="mt-10 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+        <li class="lift bg-surface rounded-2xl p-6 shadow-card flex gap-4">
+          <span class="step-num">1</span>
+          <p class="text-ink/80 pt-1">Consulta nuestro <a href="catalogo.html" class="u-link text-accent font-medium">catálogo</a> o identifica los productos que necesitas.</p>
+        </li>
+        <li class="lift bg-surface rounded-2xl p-6 shadow-card flex gap-4">
+          <span class="step-num">2</span>
+          <p class="text-ink/80 pt-1">Envíanos un mensaje por WhatsApp indicando los artículos y las cantidades que deseas.</p>
+        </li>
+        <li class="lift bg-surface rounded-2xl p-6 shadow-card flex gap-4">
+          <span class="step-num">3</span>
+          <p class="text-ink/80 pt-1">Nuestro personal revisará la disponibilidad de los productos y te proporcionará el costo de tu pedido.</p>
+        </li>
+        <li class="lift bg-surface rounded-2xl p-6 shadow-card flex gap-4">
+          <span class="step-num">4</span>
+          <p class="text-ink/80 pt-1">Confirma tu compra y selecciona el método de pago disponible.</p>
+        </li>
+        <li class="lift bg-surface rounded-2xl p-6 shadow-card flex gap-4">
+          <span class="step-num">5</span>
+          <p class="text-ink/80 pt-1">Acuerda con nuestro personal la recolección de tu pedido en alguna de nuestras sucursales.</p>
+        </li>
+        <li class="lift bg-primary text-white rounded-2xl p-6 shadow-card flex gap-4 items-center">
+          <span class="step-num !bg-highlight !text-primary">?</span>
+          <p class="pt-1 text-white/85">¿Tienes dudas sobre algún producto? <a href="contacto.html" class="u-link text-highlight font-medium">Contáctanos</a> para precios, disponibilidad y características.</p>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- Formulario de pedido -->
+  <section class="py-16 bg-surface">
+    <div class="max-w-wrap mx-auto px-6 grid lg:grid-cols-2 gap-10">
+      <div>
+        <h2 class="font-display font-bold text-primary text-3xl">Prepara tu pedido</h2>
+        <p class="mt-3 text-ink/70 text-lg">Llena el formulario y te enviaremos el resumen listo para WhatsApp.</p>
+        <form id="order-form" class="mt-8 space-y-4 bg-paper rounded-2xl p-6 md:p-8 shadow-card" novalidate>
+          <div class="grid sm:grid-cols-2 gap-4">
+            <div>
+              <label for="o-nombre" class="block text-sm font-display font-semibold text-primary mb-1">Nombre completo *</label>
+              <input id="o-nombre" name="nombre" type="text" required autocomplete="name" class="w-full rounded-lg border border-ink/15 bg-paper px-4 py-3 focus:border-accent outline-none" placeholder="Ej. María López">
+            </div>
+            <div>
+              <label for="o-tel" class="block text-sm font-display font-semibold text-primary mb-1">Teléfono / WhatsApp *</label>
+              <input id="o-tel" name="telefono" type="tel" required autocomplete="tel" class="w-full rounded-lg border border-ink/15 bg-paper px-4 py-3 focus:border-accent outline-none" placeholder="Ej. 222 123 4567">
+            </div>
+          </div>
+          <div class="grid sm:grid-cols-2 gap-4">
+            <div>
+              <label for="o-prod" class="block text-sm font-display font-semibold text-primary mb-1">Producto(s) *</label>
+              <input id="o-prod" name="producto" type="text" required class="w-full rounded-lg border border-ink/15 bg-paper px-4 py-3 focus:border-accent outline-none" placeholder="Ej. 2 cuadernos, 1 set de colores">
+            </div>
+            <div>
+              <label for="o-cant" class="block text-sm font-display font-semibold text-primary mb-1">Cantidad</label>
+              <input id="o-cant" name="cantidad" type="number" min="1" value="1" class="w-full rounded-lg border border-ink/15 bg-paper px-4 py-3 focus:border-accent outline-none">
+            </div>
+          </div>
+          <div>
+            <label for="o-suc" class="block text-sm font-display font-semibold text-primary mb-1">Sucursal de recolección *</label>
+            <select id="o-suc" name="sucursal" required class="w-full rounded-lg border border-ink/15 bg-paper px-4 py-3 focus:border-accent outline-none">
+              <option value="Sucursal Matriz">Sucursal Matriz</option>
+              <option value="Sucursal 2 (desde 2018)">Sucursal 2 (desde 2018)</option>
+            </select>
+          </div>
+          <div>
+            <label for="o-msg" class="block text-sm font-display font-semibold text-primary mb-1">Mensaje adicional</label>
+            <textarea id="o-msg" name="mensaje" rows="3" class="w-full rounded-lg border border-ink/15 bg-paper px-4 py-3 focus:border-accent outline-none" placeholder="Aclaraciones sobre el pedido (opcional)"></textarea>
+          </div>
+          <button type="submit" class="press w-full bg-accent hover:bg-primary text-white font-display font-semibold text-base px-6 py-3.5 rounded-lg shadow-card">Preparar mi pedido</button>
+        </form>
+        <div id="order-ok" class="hidden mt-4 rounded-xl border-2 border-accent bg-accent/10 p-5">
+          <p class="font-display font-semibold text-primary">¡Pedido preparado!</p>
+          <p class="mt-1 text-sm text-ink/70">Ahora envíalo por WhatsApp para que nuestro personal confirme disponibilidad y costo:</p>
+          <a id="order-wa" href="pedidos.html" target="_blank" rel="noopener" class="press mt-3 inline-flex items-center gap-2 bg-accent hover:bg-primary text-white font-display font-semibold px-6 py-3 rounded-lg">Enviar por WhatsApp</a>
+        </div>
+      </div>
+
+      <!-- Metodos de pago -->
+      <div>
+        <h2 class="font-display font-bold text-primary text-3xl">Métodos de pago</h2>
+        <p class="mt-3 text-ink/70 text-lg">Buscamos ofrecer alternativas que faciliten tus compras.</p>
+        <div class="mt-8 space-y-6">
+          <div class="lift bg-paper rounded-2xl p-6 md:p-8 shadow-card border-l-4 border-accent">
+            <h3 class="font-display font-semibold text-primary text-xl">Pago en efectivo</h3>
+            <p class="mt-2 text-ink/75">Puedes realizar el pago de tus productos directamente en cualquiera de nuestras sucursales al momento de recoger tu pedido o realizar tu compra.</p>
+          </div>
+          <div class="lift bg-paper rounded-2xl p-6 md:p-8 shadow-card border-l-4 border-highlight">
+            <h3 class="font-display font-semibold text-primary text-xl">Transferencia bancaria</h3>
+            <p class="mt-2 text-ink/75">Para facilitar los pedidos realizados a distancia, se propone incorporar el pago mediante transferencia bancaria. Una vez confirmado el pedido, te proporcionaríamos los datos correspondientes para realizar el pago y posteriormente confirmar la operación.</p>
+            <p class="mt-3 text-sm bg-highlight/10 text-ink/70 rounded-lg px-4 py-3 border border-highlight/30">Nota: la transferencia bancaria forma parte de la propuesta de mejora digital y deberá habilitarse y validarse con la administración de la empresa antes de ofrecerse como método de pago definitivo.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+<div id="site-footer"></div>
+<script src="assets/js/layout.js"></script>
+<script src="assets/js/main.js"></script>
+</body>
+</html>
+
+

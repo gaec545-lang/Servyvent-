@@ -1,0 +1,261 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Catálogo — Papelería Servyvent</title>
+<meta name="description" content="Catálogo de Papelería Servyvent: papelería escolar y de oficina, mercería, regalos, electrónica, robótica e impresión. Consulta disponibilidad y precios por WhatsApp.">
+<link rel="stylesheet" href="assets/css/fonts.css">
+<link rel="stylesheet" href="assets/css/tailwind.build.css">
+
+<link rel="stylesheet" href="assets/css/site.css">
+<link rel="icon" type="image/png" href="assets/img/logo-64.png">
+</head>
+<body data-page="catalogo" class="bg-paper text-ink font-body antialiased">
+<div id="site-header"></div>
+
+<main class="pt-[72px]">
+
+  <section class="bg-surface border-b border-primary/10">
+    <div class="max-w-wrap mx-auto px-6 py-16 md:py-20">
+      <nav class="text-sm text-ink/60" aria-label="Migas de pan">
+        <a href="index.html" class="u-link hover:text-accent">Inicio</a> <span aria-hidden="true">/</span> <span class="text-ink font-medium" aria-current="page">Catálogo</span>
+      </nav>
+      <h1 data-enter class="mt-4 font-display font-bold text-primary text-4xl md:text-6xl">Catálogo</h1>
+      <p data-enter="2" class="mt-4 text-lg text-ink/70 max-w-2xl">Consulta nuestras diferentes categorías y conoce la variedad de productos que puedes encontrar en nuestras sucursales.</p>
+    </div>
+  </section>
+
+  <section class="py-14">
+    <div class="max-w-wrap mx-auto px-6">
+
+      <!-- Filtros -->
+      <div class="flex flex-wrap gap-2" role="group" aria-label="Filtrar por categoría">
+        <button type="button" data-filter="all" aria-pressed="true" class="press px-4 py-2 rounded-full font-display font-semibold text-sm bg-accent text-white">Todas</button>
+        <button type="button" data-filter="papeleria" aria-pressed="false" class="press px-4 py-2 rounded-full font-display font-semibold text-sm bg-surface text-ink hover:bg-accent/10">Papelería</button>
+        <button type="button" data-filter="merceria" aria-pressed="false" class="press px-4 py-2 rounded-full font-display font-semibold text-sm bg-surface text-ink hover:bg-accent/10">Mercería</button>
+        <button type="button" data-filter="regalos" aria-pressed="false" class="press px-4 py-2 rounded-full font-display font-semibold text-sm bg-surface text-ink hover:bg-accent/10">Regalos</button>
+        <button type="button" data-filter="electronica" aria-pressed="false" class="press px-4 py-2 rounded-full font-display font-semibold text-sm bg-surface text-ink hover:bg-accent/10">Electrónica</button>
+        <button type="button" data-filter="robotica" aria-pressed="false" class="press px-4 py-2 rounded-full font-display font-semibold text-sm bg-surface text-ink hover:bg-accent/10">Robótica</button>
+        <button type="button" data-filter="servicios" aria-pressed="false" class="press px-4 py-2 rounded-full font-display font-semibold text-sm bg-surface text-ink hover:bg-accent/10">Servicios</button>
+      </div>
+
+      <!-- Grid de productos -->
+      <div class="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+
+        <article data-cat="papeleria" class="lift bg-surface rounded-2xl overflow-hidden shadow-card flex flex-col">
+          <div class="zoom-img h-40"><img src="assets/img/papeleria.jpg" alt="" loading="lazy"></div>
+          <div class="p-5 flex flex-col grow">
+            <span class="text-xs font-display font-semibold text-accent uppercase tracking-wide">Papelería</span>
+            <h3 class="mt-1 font-display font-semibold text-primary text-lg">Cuaderno profesional 100 hojas</h3>
+            <p class="mt-1 text-sm text-ink/70 grow">Rayado, tapa resistente, ideal para la escuela y la oficina.</p>
+            <a href="pedidos.html" data-wa-product="Cuaderno profesional 100 hojas" class="press mt-4 inline-flex items-center justify-center border-2 border-accent text-accent hover:bg-accent hover:text-white font-display font-semibold text-sm px-4 py-2.5 rounded-lg">Consultar por WhatsApp</a>
+          </div>
+        </article>
+
+        <article data-cat="papeleria" class="lift bg-surface rounded-2xl overflow-hidden shadow-card flex flex-col">
+          <div class="zoom-img h-40"><img src="assets/img/papeleria.jpg" alt="" loading="lazy"></div>
+          <div class="p-5 flex flex-col grow">
+            <span class="text-xs font-display font-semibold text-accent uppercase tracking-wide">Papelería</span>
+            <h3 class="mt-1 font-display font-semibold text-primary text-lg">Set de lápices de colores (24 pzas)</h3>
+            <p class="mt-1 text-sm text-ink/70 grow">Colores vivos de mina resistente para dibujo y trabajos escolares.</p>
+            <a href="pedidos.html" data-wa-product="Set de lápices de colores 24 pzas" class="press mt-4 inline-flex items-center justify-center border-2 border-accent text-accent hover:bg-accent hover:text-white font-display font-semibold text-sm px-4 py-2.5 rounded-lg">Consultar por WhatsApp</a>
+          </div>
+        </article>
+
+        <article data-cat="papeleria" class="lift bg-surface rounded-2xl overflow-hidden shadow-card flex flex-col">
+          <div class="zoom-img h-40"><img src="assets/img/papeleria.jpg" alt="" loading="lazy"></div>
+          <div class="p-5 flex flex-col grow">
+            <span class="text-xs font-display font-semibold text-accent uppercase tracking-wide">Papelería</span>
+            <h3 class="mt-1 font-display font-semibold text-primary text-lg">Cartulina opalina carta (paquete)</h3>
+            <p class="mt-1 text-sm text-ink/70 grow">Paquete de cartulinas en varios colores para maquetas y presentaciones.</p>
+            <a href="pedidos.html" data-wa-product="Cartulina opalina carta (paquete)" class="press mt-4 inline-flex items-center justify-center border-2 border-accent text-accent hover:bg-accent hover:text-white font-display font-semibold text-sm px-4 py-2.5 rounded-lg">Consultar por WhatsApp</a>
+          </div>
+        </article>
+
+        <article data-cat="merceria" class="lift bg-surface rounded-2xl overflow-hidden shadow-card flex flex-col">
+          <div class="zoom-img h-40"><img src="assets/img/merceria.jpg" alt="" loading="lazy"></div>
+          <div class="p-5 flex flex-col grow">
+            <span class="text-xs font-display font-semibold text-accent uppercase tracking-wide">Mercería</span>
+            <h3 class="mt-1 font-display font-semibold text-primary text-lg">Kit de mercería escolar</h3>
+            <p class="mt-1 text-sm text-ink/70 grow">Hilos, agujas y botones surtidos para costura y manualidades.</p>
+            <a href="pedidos.html" data-wa-product="Kit de mercería escolar" class="press mt-4 inline-flex items-center justify-center border-2 border-accent text-accent hover:bg-accent hover:text-white font-display font-semibold text-sm px-4 py-2.5 rounded-lg">Consultar por WhatsApp</a>
+          </div>
+        </article>
+
+        <article data-cat="merceria" class="lift bg-surface rounded-2xl overflow-hidden shadow-card flex flex-col">
+          <div class="zoom-img h-40"><img src="assets/img/merceria.jpg" alt="" loading="lazy"></div>
+          <div class="p-5 flex flex-col grow">
+            <span class="text-xs font-display font-semibold text-accent uppercase tracking-wide">Mercería</span>
+            <h3 class="mt-1 font-display font-semibold text-primary text-lg">Estambre acrílico (varios colores)</h3>
+            <p class="mt-1 text-sm text-ink/70 grow">Madejas en colores surtidos para tejido y proyectos creativos.</p>
+            <a href="pedidos.html" data-wa-product="Estambre acrílico varios colores" class="press mt-4 inline-flex items-center justify-center border-2 border-accent text-accent hover:bg-accent hover:text-white font-display font-semibold text-sm px-4 py-2.5 rounded-lg">Consultar por WhatsApp</a>
+          </div>
+        </article>
+
+        <article data-cat="merceria" class="lift bg-surface rounded-2xl overflow-hidden shadow-card flex flex-col">
+          <div class="zoom-img h-40"><img src="assets/img/merceria.jpg" alt="" loading="lazy"></div>
+          <div class="p-5 flex flex-col grow">
+            <span class="text-xs font-display font-semibold text-accent uppercase tracking-wide">Mercería</span>
+            <h3 class="mt-1 font-display font-semibold text-primary text-lg">Kit de manualidades (foami y listones)</h3>
+            <p class="mt-1 text-sm text-ink/70 grow">Foami, listones y pegamento para trabajos escolares y decoración.</p>
+            <a href="pedidos.html" data-wa-product="Kit de manualidades foami y listones" class="press mt-4 inline-flex items-center justify-center border-2 border-accent text-accent hover:bg-accent hover:text-white font-display font-semibold text-sm px-4 py-2.5 rounded-lg">Consultar por WhatsApp</a>
+          </div>
+        </article>
+
+        <article data-cat="regalos" class="lift bg-surface rounded-2xl overflow-hidden shadow-card flex flex-col">
+          <div class="zoom-img h-40"><img src="assets/img/regalos.jpg" alt="" loading="lazy"></div>
+          <div class="p-5 flex flex-col grow">
+            <span class="text-xs font-display font-semibold text-accent uppercase tracking-wide">Regalos</span>
+            <h3 class="mt-1 font-display font-semibold text-primary text-lg">Caja de regalo mediana con moño</h3>
+            <p class="mt-1 text-sm text-ink/70 grow">Cajas surtidas listas para envolver tu detalle.</p>
+            <a href="pedidos.html" data-wa-product="Caja de regalo mediana con moño" class="press mt-4 inline-flex items-center justify-center border-2 border-accent text-accent hover:bg-accent hover:text-white font-display font-semibold text-sm px-4 py-2.5 rounded-lg">Consultar por WhatsApp</a>
+          </div>
+        </article>
+
+        <article data-cat="regalos" class="lift bg-surface rounded-2xl overflow-hidden shadow-card flex flex-col">
+          <div class="zoom-img h-40"><img src="assets/img/regalos.jpg" alt="" loading="lazy"></div>
+          <div class="p-5 flex flex-col grow">
+            <span class="text-xs font-display font-semibold text-accent uppercase tracking-wide">Regalos</span>
+            <h3 class="mt-1 font-display font-semibold text-primary text-lg">Tarjeta de felicitación</h3>
+            <p class="mt-1 text-sm text-ink/70 grow">Tarjetas para cumpleaños, festividades y ocasiones especiales.</p>
+            <a href="pedidos.html" data-wa-product="Tarjeta de felicitación" class="press mt-4 inline-flex items-center justify-center border-2 border-accent text-accent hover:bg-accent hover:text-white font-display font-semibold text-sm px-4 py-2.5 rounded-lg">Consultar por WhatsApp</a>
+          </div>
+        </article>
+
+        <article data-cat="regalos" class="lift bg-surface rounded-2xl overflow-hidden shadow-card flex flex-col">
+          <div class="zoom-img h-40"><img src="assets/img/regalos.jpg" alt="" loading="lazy"></div>
+          <div class="p-5 flex flex-col grow">
+            <span class="text-xs font-display font-semibold text-accent uppercase tracking-wide">Regalos</span>
+            <h3 class="mt-1 font-display font-semibold text-primary text-lg">Artículo decorativo para el hogar</h3>
+            <p class="mt-1 text-sm text-ink/70 grow">Piezas decorativas y productos prácticos para el uso cotidiano.</p>
+            <a href="pedidos.html" data-wa-product="Artículo decorativo para el hogar" class="press mt-4 inline-flex items-center justify-center border-2 border-accent text-accent hover:bg-accent hover:text-white font-display font-semibold text-sm px-4 py-2.5 rounded-lg">Consultar por WhatsApp</a>
+          </div>
+        </article>
+
+        <article data-cat="electronica" class="lift bg-surface rounded-2xl overflow-hidden shadow-card flex flex-col">
+          <div class="zoom-img h-40"><img src="assets/img/electronica.jpg" alt="" loading="lazy"></div>
+          <div class="p-5 flex flex-col grow">
+            <span class="text-xs font-display font-semibold text-accent uppercase tracking-wide">Electrónica</span>
+            <h3 class="mt-1 font-display font-semibold text-primary text-lg">Audífonos con cable</h3>
+            <p class="mt-1 text-sm text-ink/70 grow">Audífonos cómodos para estudio, trabajo y entretenimiento.</p>
+            <a href="pedidos.html" data-wa-product="Audífonos con cable" class="press mt-4 inline-flex items-center justify-center border-2 border-accent text-accent hover:bg-accent hover:text-white font-display font-semibold text-sm px-4 py-2.5 rounded-lg">Consultar por WhatsApp</a>
+          </div>
+        </article>
+
+        <article data-cat="electronica" class="lift bg-surface rounded-2xl overflow-hidden shadow-card flex flex-col">
+          <div class="zoom-img h-40"><img src="assets/img/electronica.jpg" alt="" loading="lazy"></div>
+          <div class="p-5 flex flex-col grow">
+            <span class="text-xs font-display font-semibold text-accent uppercase tracking-wide">Electrónica</span>
+            <h3 class="mt-1 font-display font-semibold text-primary text-lg">Cargador USB 20W</h3>
+            <p class="mt-1 text-sm text-ink/70 grow">Carga rápida para celular y dispositivos compatibles.</p>
+            <a href="pedidos.html" data-wa-product="Cargador USB 20W" class="press mt-4 inline-flex items-center justify-center border-2 border-accent text-accent hover:bg-accent hover:text-white font-display font-semibold text-sm px-4 py-2.5 rounded-lg">Consultar por WhatsApp</a>
+          </div>
+        </article>
+
+        <article data-cat="electronica" class="lift bg-surface rounded-2xl overflow-hidden shadow-card flex flex-col">
+          <div class="zoom-img h-40"><img src="assets/img/electronica.jpg" alt="" loading="lazy"></div>
+          <div class="p-5 flex flex-col grow">
+            <span class="text-xs font-display font-semibold text-accent uppercase tracking-wide">Electrónica</span>
+            <h3 class="mt-1 font-display font-semibold text-primary text-lg">Power bank 10,000 mAh</h3>
+            <p class="mt-1 text-sm text-ink/70 grow">Batería portátil para mantener tu celular con carga todo el día.</p>
+            <a href="pedidos.html" data-wa-product="Power bank 10000 mAh" class="press mt-4 inline-flex items-center justify-center border-2 border-accent text-accent hover:bg-accent hover:text-white font-display font-semibold text-sm px-4 py-2.5 rounded-lg">Consultar por WhatsApp</a>
+          </div>
+        </article>
+
+        <article data-cat="robotica" class="lift bg-primary text-white rounded-2xl overflow-hidden shadow-card flex flex-col border-2 border-highlight">
+          <div class="zoom-img h-40"><img src="assets/img/robotica.jpg" alt="" loading="lazy"></div>
+          <div class="p-5 flex flex-col grow">
+            <span class="text-xs font-display font-semibold text-highlight uppercase tracking-wide">Robótica</span>
+            <h3 class="mt-1 font-display font-semibold text-white text-lg">Placa Arduino Uno R3</h3>
+            <p class="mt-1 text-sm text-white/70 grow">La placa base para proyectos de robótica educativa.</p>
+            <a href="pedidos.html" data-wa-product="Placa Arduino Uno R3" class="press mt-4 inline-flex items-center justify-center bg-highlight text-primary hover:bg-accent hover:text-white font-display font-bold text-sm px-4 py-2.5 rounded-lg">Consultar por WhatsApp</a>
+          </div>
+        </article>
+
+        <article data-cat="robotica" class="lift bg-primary text-white rounded-2xl overflow-hidden shadow-card flex flex-col border-2 border-highlight">
+          <div class="zoom-img h-40"><img src="assets/img/robotica.jpg" alt="" loading="lazy"></div>
+          <div class="p-5 flex flex-col grow">
+            <span class="text-xs font-display font-semibold text-highlight uppercase tracking-wide">Robótica</span>
+            <h3 class="mt-1 font-display font-semibold text-white text-lg">Servomotor SG90</h3>
+            <p class="mt-1 text-sm text-white/70 grow">Servomotor compacto para brazos, vehículos y mecanismos.</p>
+            <a href="pedidos.html" data-wa-product="Servomotor SG90" class="press mt-4 inline-flex items-center justify-center bg-highlight text-primary hover:bg-accent hover:text-white font-display font-bold text-sm px-4 py-2.5 rounded-lg">Consultar por WhatsApp</a>
+          </div>
+        </article>
+
+        <article data-cat="robotica" class="lift bg-primary text-white rounded-2xl overflow-hidden shadow-card flex flex-col border-2 border-highlight">
+          <div class="zoom-img h-40"><img src="assets/img/robotica.jpg" alt="" loading="lazy"></div>
+          <div class="p-5 flex flex-col grow">
+            <span class="text-xs font-display font-semibold text-highlight uppercase tracking-wide">Robótica</span>
+            <h3 class="mt-1 font-display font-semibold text-white text-lg">Kit motores DC con llantas</h3>
+            <p class="mt-1 text-sm text-white/70 grow">Motores con reductora y llantas para carritos robots.</p>
+            <a href="pedidos.html" data-wa-product="Kit motores DC con llantas" class="press mt-4 inline-flex items-center justify-center bg-highlight text-primary hover:bg-accent hover:text-white font-display font-bold text-sm px-4 py-2.5 rounded-lg">Consultar por WhatsApp</a>
+          </div>
+        </article>
+
+        <article data-cat="servicios" class="lift bg-surface rounded-2xl overflow-hidden shadow-card flex flex-col">
+          <div class="zoom-img h-40"><img src="assets/img/impresion.jpg" alt="" loading="lazy"></div>
+          <div class="p-5 flex flex-col grow">
+            <span class="text-xs font-display font-semibold text-accent uppercase tracking-wide">Servicios</span>
+            <h3 class="mt-1 font-display font-semibold text-primary text-lg">Impresión B/N carta</h3>
+            <p class="mt-1 text-sm text-ink/70 grow">Impresiones en blanco y negro tamaño carta, por hoja.</p>
+            <a href="pedidos.html" data-wa-product="Servicio de impresión B/N carta" class="press mt-4 inline-flex items-center justify-center border-2 border-accent text-accent hover:bg-accent hover:text-white font-display font-semibold text-sm px-4 py-2.5 rounded-lg">Cotizar por WhatsApp</a>
+          </div>
+        </article>
+
+        <article data-cat="servicios" class="lift bg-surface rounded-2xl overflow-hidden shadow-card flex flex-col">
+          <div class="zoom-img h-40"><img src="assets/img/impresion.jpg" alt="" loading="lazy"></div>
+          <div class="p-5 flex flex-col grow">
+            <span class="text-xs font-display font-semibold text-accent uppercase tracking-wide">Servicios</span>
+            <h3 class="mt-1 font-display font-semibold text-primary text-lg">Impresión a color carta</h3>
+            <p class="mt-1 text-sm text-ink/70 grow">Impresiones a color para presentaciones y trabajos.</p>
+            <a href="pedidos.html" data-wa-product="Servicio de impresión a color carta" class="press mt-4 inline-flex items-center justify-center border-2 border-accent text-accent hover:bg-accent hover:text-white font-display font-semibold text-sm px-4 py-2.5 rounded-lg">Cotizar por WhatsApp</a>
+          </div>
+        </article>
+
+        <article data-cat="servicios" class="lift bg-surface rounded-2xl overflow-hidden shadow-card flex flex-col">
+          <div class="zoom-img h-40"><img src="assets/img/impresion.jpg" alt="" loading="lazy"></div>
+          <div class="p-5 flex flex-col grow">
+            <span class="text-xs font-display font-semibold text-accent uppercase tracking-wide">Servicios</span>
+            <h3 class="mt-1 font-display font-semibold text-primary text-lg">Copiado y encuadernado</h3>
+            <p class="mt-1 text-sm text-ink/70 grow">Copias B/N y encuadernado espiral para tus documentos.</p>
+            <a href="pedidos.html" data-wa-product="Servicio de copiado y encuadernado" class="press mt-4 inline-flex items-center justify-center border-2 border-accent text-accent hover:bg-accent hover:text-white font-display font-semibold text-sm px-4 py-2.5 rounded-lg">Cotizar por WhatsApp</a>
+          </div>
+        </article>
+
+      </div>
+
+      <!-- Nota -->
+      <div class="mt-14 bg-surface rounded-2xl p-8 md:p-10 shadow-card flex flex-col md:flex-row items-center justify-between gap-6">
+        <div>
+          <h2 class="font-display font-bold text-primary text-2xl">¿Buscas algún producto en particular?</h2>
+          <p class="mt-2 text-ink/70 text-lg">Escríbenos y consulta su disponibilidad, características y precio. ¡Estamos para ayudarte a encontrar lo que necesitas!</p>
+        </div>
+        <div class="flex flex-col sm:flex-row gap-3 shrink-0">
+          <a href="pedidos.html" class="press inline-flex items-center justify-center gap-2 bg-accent hover:bg-primary text-white font-display font-semibold px-6 py-3 rounded-lg">Escríbenos por WhatsApp</a>
+          <button type="button" disabled title="Próximamente" class="press inline-flex items-center justify-center gap-2 bg-surface text-ink/50 border border-ink/10 font-display font-semibold px-6 py-3 rounded-lg cursor-not-allowed">Descargar catálogo PDF (próximamente)</button>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+</main>
+<div id="site-footer"></div>
+<script src="assets/js/layout.js"></script>
+<script src="assets/js/main.js"></script>
+<script>
+  // Filtro inicial desde productos.html (?cat=...)
+  document.addEventListener("DOMContentLoaded", function () {
+    var q = new URLSearchParams(location.search).get("cat");
+    if (q) {
+      var b = document.querySelector('[data-filter="' + q + '"]');
+      if (b) b.click();
+    }
+  });
+</script>
+</body>
+</html>
+
+
+

@@ -1,0 +1,63 @@
+﻿/* ============================================================
+   Papeleria Servyvent - estilos globales propios (sobre Tailwind)
+   Micro-interacciones: hover lift, zoom en fotos, press en botones,
+   subrayado que se dibuja, entrada del hero una sola vez al cargar.
+   ============================================================ */
+
+@keyframes riseIn {
+  from { opacity: 0; transform: translateY(26px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+[data-enter]     { animation: riseIn .7s cubic-bezier(.22,.61,.36,1) both; }
+[data-enter="2"] { animation-delay: .12s; }
+[data-enter="3"] { animation-delay: .24s; }
+[data-enter="4"] { animation-delay: .36s; }
+
+@media (prefers-reduced-motion: reduce) {
+  [data-enter] { animation: none; }
+  * { transition-duration: .01ms !important; }
+}
+
+.lift { transition: transform .25s ease, box-shadow .25s ease; }
+.lift:hover { transform: translateY(-2px); box-shadow: 0 2px 4px rgba(23,54,93,.08), 0 18px 36px -18px rgba(23,54,93,.30); }
+
+.zoom-img { overflow: hidden; }
+.zoom-img img { transition: transform .5s ease; display: block; width: 100%; height: 100%; object-fit: cover; }
+.zoom-img:hover img { transform: scale(1.03); }
+
+.press { transition: transform .12s ease, background-color .2s ease, box-shadow .2s ease; }
+.press:active { transform: scale(.97); }
+
+.u-link {
+  background-image: linear-gradient(currentColor, currentColor);
+  background-size: 0% 2px;
+  background-repeat: no-repeat;
+  background-position: 0 100%;
+  transition: background-size .3s ease;
+  padding-bottom: 2px;
+}
+.u-link:hover { background-size: 100% 2px; }
+
+:focus-visible { outline: 3px solid rgba(40,120,181,.55); outline-offset: 2px; border-radius: 4px; }
+
+html { scroll-behavior: smooth; }
+section[id], [id^="cat-"] { scroll-margin-top: 96px; }
+
+.step-num {
+  font-family: Montserrat, sans-serif;
+  font-weight: 700;
+  background: #2878B5;
+  color: #fff;
+  width: 2.75rem; height: 2.75rem;
+  border-radius: 9999px;
+  display: flex; align-items: center; justify-content: center;
+  flex-shrink: 0;
+}
+
+/* Logo real de Servyvent (assets/img/logo-512.png) */
+.logo-img    { height: 2.75rem; width: auto; display: block; }
+.logo-footer { height: 2.5rem; width: auto; display: block; }
+.logo-hero   { height: 6rem; width: auto; display: block; }
+.logo-chip   { background: #fff; border-radius: .75rem; padding: .375rem; display: inline-flex; }
+.logo-chip-lg{ background: #fff; border-radius: 1rem; padding: 1rem; display: inline-flex; box-shadow: 0 2px 4px rgba(23,54,93,.08), 0 16px 32px -16px rgba(23,54,93,.28); }
+
