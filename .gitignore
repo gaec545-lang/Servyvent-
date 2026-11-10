@@ -1,0 +1,4 @@
+﻿Servyvent-web.zip
+node_modules/
+.npm-cache/
+*.log
