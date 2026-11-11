@@ -17,9 +17,20 @@
     { id: "contacto",    label: "Contacto",    href: "contacto.html" }
   ];
 
-  // Logo real de Papeleria Servyvent (subido por el cliente)
+  // Logo real de Papeleria Servyvent (subido por el cliente, fondo transparente)
   var LOGO_NAV = '<img src="assets/img/logo-512.png" alt="Logotipo de Papelería Servyvent" class="logo-img">';
   var LOGO_FOOTER = '<img src="assets/img/logo-512.png" alt="Logotipo de Papelería Servyvent" class="logo-footer">';
+
+  // Redes sociales reales de la empresa
+  var SOCIAL = {
+    facebook: "https://www.facebook.com/people/ServyVent/61596310114982/",
+    instagram: "https://www.instagram.com/papeleria_servyvent/",
+    maps: "https://maps.app.goo.gl/LP2NtEmszQKUWXrZA"
+  };
+  var SOC =
+    '<a class="soc" href="' + SOCIAL.facebook + '" target="_blank" rel="noopener" aria-label="Facebook de Papelería Servyvent"><svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>' +
+    '<a class="soc" href="' + SOCIAL.instagram + '" target="_blank" rel="noopener" aria-label="Instagram de Papelería Servyvent"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></a>' +
+    '<a class="soc" href="' + SOCIAL.maps + '" target="_blank" rel="noopener" aria-label="Ubicación de la tienda en Google Maps"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 1 1 16 0z"/><circle cx="12" cy="10" r="3"/></svg></a>';
 
   var page = document.body.getAttribute("data-page") || "inicio";
 
@@ -90,6 +101,7 @@
             '<li>2 sucursales · Horario: consultar en tienda</li>' +
             '<li>Pagos: efectivo en sucursal y transferencia bancaria</li>' +
             '<li><a class="text-highlight hover:underline" href="pedidos.html">Hacer un pedido por WhatsApp</a></li>' +
+            '<li class="soc-row">' + SOC + "</li>" +
           "</ul>" +
         "</div>" +
       "</div>" +
@@ -106,4 +118,3 @@
   if (h) h.innerHTML = header;
   if (f) f.innerHTML = footer;
 })();
-

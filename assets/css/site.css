@@ -61,3 +61,12 @@ section[id], [id^="cat-"] { scroll-margin-top: 96px; }
 .logo-chip   { background: #fff; border-radius: .75rem; padding: .375rem; display: inline-flex; }
 .logo-chip-lg{ background: #fff; border-radius: 1rem; padding: 1rem; display: inline-flex; box-shadow: 0 2px 4px rgba(23,54,93,.08), 0 16px 32px -16px rgba(23,54,93,.28); }
 
+
+/* Textos justificados (pedido del cliente) */
+main p { text-align: justify; hyphens: auto; -webkit-hyphens: auto; }
+
+/* Iconos de redes sociales en el footer */
+.soc { width: 2.25rem; height: 2.25rem; border-radius: .5rem; background: rgba(255,255,255,.10); color: #fff; display: inline-flex; align-items: center; justify-content: center; transition: background-color .2s ease, color .2s ease, transform .2s ease; }
+.soc:hover { background: #E8A23A; color: #17365D; transform: translateY(-2px); }
+.soc-row { display: flex; gap: .5rem; padding-top: .5rem; }
+
